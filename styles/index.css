@@ -1,5 +1,5 @@
 #background_left{
-    background-image: linear-gradient(rgba(121, 105, 105, 0.5), rgba(5, 6, 5, 0.5)), 
+    background-image: linear-gradient(rgba(65, 54, 54, 0.5), rgba(5, 6, 5, 0.5)), 
     url("https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590__480.jpg");
     height: 100%;
     background-position: center;
@@ -9,9 +9,12 @@
    /* border: 5px solid blue;*/
     width: 30%;
     left: 0px;
+    animation: fadeIn 2s;
+    flex: content;
+    
 }
 #background_right{
-    background-image: linear-gradient(rgba(121, 105, 105, 0.5), rgba(5, 6, 5, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(5, 6, 5, 0.5)), 
     url("https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg");
     height: 100%;
     background-position: right;
@@ -22,9 +25,18 @@
     width: 70%;
     right: 0px;
     flex: content;
+    animation: 2s fadeIn;
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 p{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  animation: fadeIn 5s;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 #catchphrase{
     text-align: left;
@@ -33,6 +45,7 @@ p{
     margin-left: 20px;
     font-size: large;
     width: 600px;
+    color:rgb(195, 198, 198)
 }
 
 #rating_img{
@@ -41,7 +54,7 @@ p{
     border-radius: 70%;
 }
 #rating_text{
-    font-family:fantasy;
+    font-family:monospace;
     color: aliceblue;
     text-align: inherit;
 
@@ -52,32 +65,37 @@ p{
     padding: 5px;
     bottom: 10px;
     text-align: center;
+    animation: 10s fadeIn;
+
+
 }
 body{
     overflow-y: hidden;
     background-color: #111;
 }
 header{
-    font-family:monospace;
-    font-size: 70px;
+  animation: fadeIn 5s;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 90px;
     text-align: left;
     position: relative;
     top:auto;
     margin-left: 20px;
+    color: aliceblue;
 }
 
 /* The sidebar menu */
 .sidebar {
-    height: 100%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; 
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; 
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
   }
   
   /* The sidebar links */
@@ -92,7 +110,7 @@ header{
   
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
-    color: #9f1111;
+    color: #ffffff;
   }
   
   /* Position and style the close button (top right corner) */
@@ -108,20 +126,25 @@ header{
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: rgb(0, 0, 0);
-    color: rgb(109, 106, 106);
+    background-color: rgb(16, 0, 0);
+    color: rgb(187, 182, 182);
     padding: 10px 15px;
     border: none;
+    animation: 4s fadeIn;
+  
   }
   
   .openbtn:hover {
-    background-color: #9f1111;
+    background-color:rgb(78, 79, 79);
+    width: 250px;
+    height: 70px;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
-    transition: margin-left .5s; /* If you want a transition effect */
+    transition: margin-right .5s; /* If you want a transition effect */
     padding: 20px;
+    
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
