@@ -8,7 +8,8 @@
     <title>Welcoming page</title>
 </head>
 <body>
-    <div id="background_left" class="background_image">
+    <ul>
+        <li class="fade-in-header"><header>Mountlake</header></li>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="restaurant/restaurant.html">Restaurant</a>
@@ -17,29 +18,52 @@
             <a href="accessibility/accessibility.html">Accessibility</a>
         </div>
         <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776;<span> Our offerings</span></button>
-            <h2>Epic food</h2>
-            <p>Epic topic</p>
+            <button class="openbtn" onclick="openNav()">&#9776;<span> Click here!</span></button>
         </div>
+    </ul>
+    <div id="background_left" class="background_image">
+        <div id="left_text">
+            <div class="container">
+                <p>We present to you the finest dining in a 100 kilometer radius!</p>
+                <div class="overlay">
+                    <a href="restaurant/restaurant.html">Restaurant</a>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <p>Book a room with us and explore everything Mountlake has to offer!</p>
+                <div class="overlay">
+                    <a href="booking/booking.html">Booking</a>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <p>Visit our church for relevant texts about our society!</p>
+                <div class="overlay">
+                    <a href="topic/topic.html">DATA1100</a>
+                </div>
+            </div>
+        </div>
+        <a class="left_bottom" href="accessibility/accessibility.html">Accessibility</a>
     </div>
+
     <div id="background_right" class="background_image">
-        <div class="fade-in-header">
-            <header>Mountlake</header>
-        </div>
-        <p id="catchphrase">You will never want to return to the city after staying with us, that is a promise.</p>
         <figure id="rating_figure">
             <img id="rating_img" src="https://cdn.pixabay.com/photo/2018/09/14/14/31/feedback-3677258_1280.jpg" alt="rating">
             <figcaption id="rating_text">100% of our guests leave satisfied!</figcaption>
         </figure>
     </div>
     
-   
+    
     <script>
+        /* Using JavaScript to give the sidebar function. 
+        On opening of sidebar a window slides in from the left which dispays the sidebar content 
+        width and marginRight on 250px */
         function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
             document.getElementById("main").style.marginRight = "250px";
         }
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        /* On closing of sidebar, content collapses with width and marginright on 0px */
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginRight = "0";
