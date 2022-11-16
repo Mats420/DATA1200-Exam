@@ -9,45 +9,165 @@
 </head>
 <body>
 
-    <header><h1 href="#Top">Welcome to Los Pollos Hermanos!</h1></header>
     <ul>
-        <li><a class="active" id="home" href="https://github.com/Mats420/DATA1200-Exam/blob/main/index.html">Home</a></li>
-	    <!-- FIX THE LINK TO HOME! -->
-        <li><a href="#Menu">Menu</a></li>
-        <li><a href="https:\\www.vg.no">Contact</a></li>
-        <li id="about"><a href="aboutUs.html">About</a></li>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="restaurant/restaurant.html">Restaurant</a>
+            <a href="booking/booking.html">Booking</a>
+            <a href="topic/topic.html">Topical (DATA1100)</a>
+            <a href="accessibility/accessibility.html">Accessibility</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;<span></span></button>
+        </div>
+        <li><a class="active" href="C:\Users\Mats\OneDrive - OsloMet\Dokumenter\GitHub\DATA1200-Exam\index.html"><header href="#Top">Mountlake</header></a></li> 
+        <li><a id="menu" href="#Menu">Menu</a></li>
+        <li><a id="contact" href="https:\\www.vg.no">Contact</a></li>
+        <li><a id="about" href="aboutUs.html">About</a></li>
     </ul>
     <div id="background1">
+        
         <figure class="hermanos">
             <img alt="Pollos" src="images/pollos_hermanos.png">
-            <figcaption style="font-size: 14px;"> The finest ingredients are brought together with love and care, then slow cooked to perfection. Yes, the old ways are still best at Los Pollos Hermanos. But don't take my word for it. One taste, and you'll know."</figcaption>
-            <cite> ―Gustavo Fring, CEO of Los Pollos Hermanos</cite>
+            <div id="slogan">
+                <figcaption style="font-size: 14px;"> "The finest ingredients are brought together with love and care, then slow cooked to perfection. Yes, the old ways are still best at Los Pollos Hermanos. But don't take my word for it. One taste, and you'll know."</figcaption>
+                <cite> ―Gustavo Fring, CEO of Los Pollos Hermanos</cite>
+            </div>  
         </figure>
-        <br>       
+        <br>
+        
     </div>
     <div id="background2"></div>
         <div class="preview_menu">
             <figure class="snacks">
-                <figcaption style="font-family:sans-serif ;">Snacks</figcaption>
-                <a href="#Menu"><img alt="Chips" title="Paprika flavoured chips" src="images/chips.jpg"></a>
-                <a href="#Menu"><img alt="Sandwich" title="Sandwich" src="images/sandwich.jpg"></a>
-            </figure>
-    
+                <div class="row">
+                    <figcaption>Snacks</figcaption>
+                    <!--<a href="#Menu">-->
+                    <div class="column">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="chips" alt="Chips" title="Paprika flavoured chips" src="images/chips.jpg">
+                                </div>
+                                <div class="flip-box-back">
+                                    <dt>Paprika flavoured chips</dt>
+		                            <dd>Description:<br>Nachos with genuine paprika flavour.<br>
+                                    Allergens: none.</dd>
+		                            <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="sandwich" alt="Sandwich" title="Epic sandwich" src="images/sandwich.jpg">
+                                </div>
+                                <div class="flip-box-back">
+                                    <dt>Sandwich</dt>
+                                    <dd>Description: Ham and cheese sandwich. Bread is store bought.<br>
+                                        Allergens: lactose.</dd>
+                                    <br>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<a href="#Menu">-->
+                </div>
+            </figure>  
             <br>
-    
+            <hr>
             <figure class="dinner">
-                <figcaption style="font-family: sans-serif ;">Dinner</figcaption>
-                <a href="#Menu"><img title="Chicken with fries" alt="Chicken_Fries" src="images/chicken.jpg"></a>
-                <a href="#Menu"><img alt="Burger" title="Cheeseburger" src="images/burger.jpg"></a>    
-                <a href="#Menu"><img alt="Pizza" title="Pizza" src="images/pizza.jpg"></a>
+                <div class="row">
+                    <figcaption>Dinner</figcaption>
+                    <div class="column">
+                        <!--<a href="#Menu">-->
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="chicken" title="Chicken with fries" alt="Chicken_Fries" src="images/chicken.jpg">
+                                </div>
+                                <div class="flip-box-back">
+                                    <dt>Chicken with fries</dt>
+                                    <dd>Description: Fried chicken, served with french fries.<br>
+                                        Allergens: eggs.</dd>
+                                    <br>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <!--<a href="#Menu">-->
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="burger" alt="Burger" title="Cheeseburger" src="images/burger.jpg">
+                                </div>
+                                <div class="flip-box-back">
+                                    <dt>Cheeseburger</dt>
+		                            <dd>Description: Grilled beef cheeseburger with pickle, salad, cheddar and tomatoes.<br>
+		                            Allergens: lactose.</dd>
+		                            <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="pizza" alt="Pizza" title="Vegan pizza" src="images/pizza.jpg">
+                                </div>
+                                <div class="flip-box-back">
+                                    <dt>Pizza</dt>
+		                            <dd>Description: Pizza with leafs, mozzarella, and in-house tomato sauce.<br>
+		                            Allergens: eggs, lactose.</dd>
+		                            <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<a href="#Menu">-->                    
+                </div>
             </figure>
-
             <br>
-
+            <hr>
             <figure class="dessert">
-                <figcaption style="font-family:sans-serif ;">Dessert</figcaption>
-                <a href="#Menu"><img alt="Ice Cream" title="Ice Cream" src="images/ice_cream.jpg"></a> 
-                <a href="#Menu"><img alt="Cake" title="Cake" src="images/cake.jpg"></a>
+                <div class="row">
+                    <figcaption>Dessert</figcaption>
+                    <!--<a href="#Menu">-->
+                    <div class="column">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="ice_cream" alt="Ice Cream" title="Chocolate Ice Cream" src="images/ice_cream.jpg">
+                                </div>
+                                <div class="flip-box-back">
+                                    <dt>Ice cream</dt>
+	    	                        <dd>Description: Chocolate and vanilla flavoured ice cream.<br>
+	    	                        Allergens: cocoa, lactose.</dd>
+		                            <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img id="cake" alt="Cake" title="Chocolate cake" src="images/cake.jpg">
+                                </div>
+                                <div class="flip-box-back">
+                                    <dt>Cake</dt>
+	    	                        <dd>Description: Chocolate cake<br>
+	    	                        Allergens: cocoa, lactose</dd>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<a href="#Menu">-->
+                </div>
             </figure>
         </div>
     
@@ -81,6 +201,22 @@
 	    </dl>
     </div>
     <h4 class="top_link"><a href="#Top">Back to top</a></h4>
+
+
+    <script>
+        /* Using JavaScript to give the sidebar function. 
+        On opening of sidebar a window slides in from the left which dispays the sidebar content 
+        width and marginRight on 250px */
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+        }
+        /* On closing of sidebar, content collapses with width and marginright on 0px */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginRight = "0";
+        }
+    </script>
 </body>
 </html>
 
