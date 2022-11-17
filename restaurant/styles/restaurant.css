@@ -122,11 +122,11 @@ ul{
     border-radius: 5%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-/*
+
 .hermanos{
-    background-color: white;
+    animation: fadeIn 4s;
 }
-*/
+
 
 /* This is the black bar at the top*/
 ul { 
@@ -150,7 +150,7 @@ li header{
   }
 
 header{ 
-    animation: fadeIn 5s; 
+    animation: fadeIn 2s; 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 90px;
     text-align: center;
