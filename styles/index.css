@@ -10,7 +10,7 @@
     position: fixed;   
    /* border: 5px solid blue;*/
     width: 30%;
-    left: 0px;
+    left: 0;
     animation: fadeIn 2s;
     flex: content;   
 }
@@ -18,9 +18,9 @@
 /* Text advertising for Mountlake */
 #left_text{ 
   text-align: left;
-  margin-top: 100px;
-  padding: 5px 5px 5px 5px;
-  background-color: rgb(255, 255, 255);
+  margin-top: 25%;
+  padding: 10px 10px 10px 10px;
+  background-color: aliceblue;
   display:block;
 }
 
@@ -45,30 +45,39 @@
 
 /* Overlay shows up when hovering upon the container */
 .container:hover .overlay { 
-  bottom: -10px;
-  height: 60px;
+  bottom: 0;
+  height: 50px;
 }
 
 /* Overlay containing the link to each of the wbsites */
 .overlay a{ 
   position: relative;
-  color: #ffffff;
-  text-decoration: none;
+  color:aliceblue;
+  text-decoration:underline;
   text-align: center;
   font-size: 30px;
   display: block;
   margin-top: 12px;
+  text-decoration-color: rgb(9,61,1);
 }
 
 /* Accessibility link on bottom left */
 .left_bottom { 
-  color: #ffffff;
-  text-decoration: none;
+  color: aliceblue;
+  text-decoration:underline;
   position:absolute;
-  margin-top: 275px;
+  text-align: left;
   font-size: 15px;
   padding: 10px;
+  text-decoration-color: #000000;
 }
+.left_bottom:hover{
+  transition: 0.5s;
+  font-size: 25px;
+  color: crimson;
+}
+
+
 
 /* Background image on the right */
 #background_right{ 
@@ -81,7 +90,7 @@
     position: fixed;   
     /*border: 5px solid red; */
     width: 70%;
-    right: 0px;
+    right: 0;
     flex: content;
     animation: 2s fadeIn;
 }
@@ -127,16 +136,6 @@ body{
     background-color: #111;
 }
 
-/* Mountlake logo on top of page */
-header{ 
-  animation: fadeIn 5s; 
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 90px;
-  text-align: center;
-  position: relative;
-  top:auto;
-  color: aliceblue;
-}
 
 /* The sidebar menu */
 .sidebar {
@@ -164,7 +163,7 @@ header{
   
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
-    color: #ffffff;
+    color: aliceblue;
   }
   
   /* Position and style the close button (top right corner) */
@@ -181,7 +180,7 @@ header{
     font-size: 20px;
     cursor: pointer;
     background-color: rgb(0, 0, 0);
-    color: rgb(187, 182, 182);
+    color: aliceblue;
     padding: 20px 20px;
     border: none;
     animation: 4s fadeIn;
@@ -203,6 +202,7 @@ header{
 .openbtn:hover span{ 
   padding-left: 5px;
   transition: 0.5s;
+  color: burlywood;
 }
 
 /* On hover after span, arrow is visible */
@@ -212,12 +212,15 @@ header{
   transition: 1s;
 }
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-right .5s; /* If you want a transition effect */
-    padding: 20px;
-    
-  }
+span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-right .5s; /* If you want a transition effect */
+  padding: 20px;
+}
   
   /* Making things more appropriate for screens with less than 450px in height*/
   @media screen and (max-height: 450px) {
@@ -254,9 +257,23 @@ header{
   }
 
   /* Header*/
-  li { 
+  li a{ 
     float: right;
-    margin-right: 35%;
+    padding: 5px 5px;
+    text-decoration: none;
+    animation: fadeIn 5s; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 90px;
+    text-align-last: center;
+    color: aliceblue;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    margin-top: 0;
+  }
+
+  li a:hover{
+    color: burlywood;
   }
   
   
