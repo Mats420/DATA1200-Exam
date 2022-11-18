@@ -221,7 +221,6 @@ html {
     left: 130px;
     position:absolute;
     top: 300%;
-    
     width: 80%;
     background-color: burlywood;
 }
@@ -450,8 +449,26 @@ a{
   }
   /* Better for larger screens */
   @media screen and (min-width: 1300px){
-    header {left: 50%;}
-    #about {right: 100px;}
+    header {left:38%;}
+    #about {right: 200px;}
+    .hermanos {margin: auto;margin-top: 5%;}
+    .down_arrow1 {top: -30px;}
+    .preview_menu {height: 66%;}
+    .up_arrow1 {top: 170px;}
+    .down_arrow2 {top: 130px;}
+    .up_arrow2 {top: 30px; left: 95px;}
+    #Menu {top: 250%; height: 100%; width: 86%;}
+    .top_link {top: 350px;}
+    .sidebar a {font-size: 30px;}
+    .sidebar a:hover {font-size: 40px;}
+    #pollos {width: 350px;height: 400px;}
+    figcaption {font-size: 20px;}
+    cite {font-size: 15px;}
+    .openbtn {left: 18px;}
+    dd {font-size: 20px;}
+    dt {font-size: 25px;}
+    h2{font-size: 35px;}
+    
     
   }
 
@@ -520,8 +537,8 @@ a{
 
 }
 #sandwich{
-    width: 250px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 #chicken{
