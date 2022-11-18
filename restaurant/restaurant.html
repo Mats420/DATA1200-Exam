@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Pollos hermanos, menu, about us">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles\restaurant.css">
     <title>Pollos Hermanos</title>
 </head>
 <body>
-
+    <div class="bar1"></div>
     <ul>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -21,7 +21,7 @@
             <button class="openbtn" onclick="openNav()">&#9776;<span></span></button>
         </div>
         <li><a href="../index.html"><header href="#Top">Mountlake</header></a></li> 
-        <li><a id="menu" href="#Menu">Menu</a></li>
+        <li><a id="menu_button" href="#Menu">Menu</a></li>
         <li><a id="contact" href="https:\\www.vg.no">Contact</a></li>
         <li><a id="about" href="aboutUs.html">About</a></li>
     </ul>
@@ -35,13 +35,13 @@
         </figure>
         <br>
         <div class="down_arrow1">
-            <a id="arrow" href="#down">Down</a>
+            <a href="#down"><i class="arrow down"></i></a>
         </div>
     </div>
     <div id="down"></div>
     <div id="background2">
         <div class="up_arrow1">
-            <a id="arrow" href="#Top">Up</a>
+            <a href="#Top"><i class="arrow up"></i></a>
         </div>
         <div class="preview_menu">
             <figure class="snacks">
@@ -168,11 +168,17 @@
                 </div>
             </figure>
         </div>
+        <div class="bar2">  
+        </div>
         <div class="down_arrow2">
-            <a id="arrow" href="#Menu">Down</a>
+            <a href="#Menu"><i class="arrow down"></i></a>
         </div>
     </div>
+    
     <div id="Menu">
+        <div class="up_arrow2">
+            <a href="#down"><i class="arrow up"></i></a>
+        </div>
         <h2>Menu</h2>
 	    <dl>
 		    <dt>Paprika flavoured chips:</dt>
@@ -200,10 +206,11 @@
 	    	<dd>Description: Chocolate cake<br>
 	    	Allergens: cocoa, lactose</dd>	
 	    </dl>
+        <div class="top_link">
+            <a href="#Top"><i class="arrow up"></i></a>
+        </div>
     </div>
-    <h4 class="top_link"><a href="#Top">Back to top</a></h4>
-
-
+    
     <script>
         /* Using JavaScript to give the sidebar function. 
         On opening of sidebar a window slides in from the left which dispays the sidebar content 
