@@ -1,8 +1,41 @@
+.bar1{
+    height: 100%; /* 100% Full-height */
+    width: 125px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    opacity: 0.9;
+}
+.bar2{
+    height: 100%; /* 100% Full-height */
+    width: 130px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /*padding-top: 60px; /* Place content 60px from the top */
+    opacity: 0.9;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 
+}
+
+dd{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 dt{
     text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 cite{
     font-size: 12px;
@@ -16,10 +49,10 @@ figure{
 }
 .hermanos{
     text-align: center;
-    width: 350px;
-    height: 400px;
+    width: 50%;
+    height: 50%;
     position: relative;
-    margin: auto;
+    margin-left: 26%;
     top: 150px;
 }
 #pollos:hover{
@@ -47,8 +80,9 @@ hr{
 }
 body{
     overflow-y: hidden;
+    overflow-x: hidden ;
     background-color: rgb(0, 0, 0);
-    animation: fadeIn 1s;
+    animation: fadeIn 3s;
 }
 
 
@@ -63,38 +97,76 @@ html {
 
 .down_arrow1{
     margin-left: 0;
-    margin-top: 14.3%;
+    margin-top: 19.5%;
     background-color: black;
     text-align: center;
-    padding: 10px 10px;
+    padding: 0px 10px 10px 10px;
     position: relative;
-    border-width: 0 3px 3px 0;
+    height: 50px;
+
 }
 .down_arrow2{
     text-align: right;
-    margin-top: 30px;
+    margin-top: 0px;
     padding: 10px 10px;
     position: relative;
-    margin-right: 20px;
+    margin-right:43px;
     float: right;
+    z-index: 3;
 }
 .up_arrow1{
     text-align: right;
-    top: 130px;
+    top: 140px;
     padding: 10px 10px;
     position: relative;
-    margin-right: 35px;
+    margin-right: 40px;
     float: right;
+    z-index: 2;
 }
-#arrow {
-    color:aliceblue;
+.up_arrow2{
+    text-align: right;
+    top: 0px;
+    left: 85px;
+    /*padding: 10px 10px;*/
+    position: relative;
+    margin-right: 0;
+    float: right;
+    z-index: 2;
+}
+.top_link{
+    position: relative;
+    top: 0;
+    padding: 10px 10px;
+    color: white;
     text-decoration: none;
-    font-size: 25px;
+    z-index: 2;
+    left: -100px;
 }
-#arrow:hover {
-    transition: 0.5s;
-    color:black;
-    font-size: 30px;
+.arrow {
+    color:aliceblue;
+    border: solid white;
+    /*text-decoration: none;
+    font-size: 25px;*/
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+.arrow:hover {
+    transition: 1s;
+    /*color:black;*/
+    border: solid black;
+    padding: 12px;
+    border-width: 0 10px 10px 0;
+    /*font-size: 30px;*/
+    opacity: 1;
+}
+.down{
+    transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+}
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
 #background1{
     background-image: linear-gradient(rgba(121, 105, 105, 0.5), rgba(50, 53, 50, 0.5)), 
@@ -108,6 +180,7 @@ html {
     margin-left: -10px;
     top: 0px;
     margin-right: -5px;
+    z-index: -1;
     
 }
 #background2{
@@ -144,12 +217,12 @@ html {
 }
 
 #Menu{
-    padding: 5px 5px;
+    padding: 10px 10px 10px 10px;
+    left: 130px;
     position:absolute;
-    top: 350%;
-    padding: auto;
-    width: 500px;
-    border-color: 2px solid white;
+    top: 300%;
+    
+    width: 80%;
     background-color: burlywood;
 }
 
@@ -209,7 +282,7 @@ header:hover{
     100% { opacity: 1; }
   }
 
-  #menu{
+  #menu_button{
     padding: 10px 10px;
     color: white;
     text-decoration: none;
@@ -220,7 +293,7 @@ header:hover{
     position: absolute;
   }
 
-#menu:hover{
+#menu_button:hover{
     transition: 0.2s;
     color: burlywood;
     font-size: 30px;
@@ -268,15 +341,7 @@ a{
 }
 
 
-.top_link{
-    position: relative;
-    top: 2200px;
-    padding: 10px;
-    margin: 10px;
-    color: white;
-    text-decoration: none;
-    
-}
+
 
 
 
