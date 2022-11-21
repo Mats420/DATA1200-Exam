@@ -1,0 +1,135 @@
+
+
+/* All flip-box styling is related to the preview_menu */
+
+/* Sizing of the flip-box (back content) */
+.flip-box {
+  background-color: transparent;
+  width: 250px;
+  height:180px;
+  perspective: 1000px;
+}
+
+/* Sizing and positioning of flip-box during transormation */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;    
+}
+
+/* Determins rotation degree of flip-box */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+  
+/* Positioning and sizing after transformation */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Visibility of flip-box-front after transformation */
+.flip-box-front {
+  background-color: transparent;
+  color: black;
+}
+  
+/* Styling of content on back of flip-box */
+.flip-box-back {
+  padding: 5px 10px;
+  border-radius: 20px/20px;
+  text-align: left;
+  background-color: burlywood;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+/* Same styling of food-images on page2 */
+#cake{
+  width: 250px;
+  height: 170px;
+  border-radius: 20px/20px;
+}
+#ice_cream{
+  width: 250px;
+  height: 170px;
+  border-radius: 20px/20px;
+}
+#chips{
+  width: 250px;
+  height: 170px;
+  border-radius: 20px/20px;
+}
+#sandwich{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px/20px;
+}
+#chicken{
+  width: 250px;
+  height: 170px;
+  border-radius: 20px/20px;
+}
+#pizza{
+  width: 250px;
+  height: 170px;
+  border-radius: 20px/20px;
+}
+#burger{
+  width: 250px;
+  height: 170px;
+  border-radius: 20px/20px;
+}
+
+/*  */
+* {
+  box-sizing: border-box;    
+}
+  
+/* Styling of columns in preview_menu */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+  height: 150px;    
+}
+  
+/* Styling of row content */
+.row {
+  padding:0;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Styling all content for screens with width < 1100px */
+@media screen and (max-width:1100px) {
+  dd {font-size: 12px;}
+  dt {font-size: 14px;}
+  h2 {font-size:20px}
+  .row { width: 450px; margin-left: -50px;}
+  #chicken {height: 100px; width: 150px;}
+  #cake {height:100px; width: 150px;}
+  #sandwich {height:100px; width: 150px;}
+  #burger {height:100px; width: 150px;}
+  #ice_cream {height:100px; width: 150px;}
+  #chips {height:100px; width: 150px;}
+  #pizza {height:100px; width: 150px;}
+  .flip-box {height:150px; width: 150px;}    
+}
+
+
+    
