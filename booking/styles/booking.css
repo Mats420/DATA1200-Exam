@@ -1,0 +1,330 @@
+
+
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; 
+    width: 0; /* changes with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; 
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    opacity: 1;
+  }
+  
+  /* The sidebar links */
+  .sidebar a { 
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #747171;
+    display: block;
+    transition: 0.3s; /* Transition to hover effect */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: aliceblue;
+    font-size: 30px;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position:relative;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: black;
+    padding: 5px 5px;
+    border: none;
+    animation: 4s fadeIn;
+    z-index: 2;
+    margin-top: 10px;
+    position: fixed;
+    margin-left: 23px;
+    border-radius: 50px/40px;
+    transition: 0.5s;
+}
+
+/* Hover effect on hover of button */
+.openbtn:hover{
+    color: burlywood;
+}
+/* For opnening the sidebar */
+#main {
+    transition: margin-right .5s; /* Transition effect */
+    padding: 20px;
+}
+
+/*
+Sidebars .bar1 and .bar2 helped with aligning the navigation arrows
+Will not be visible. */
+.bar1{
+    height: 100%;
+    width: 130px; 
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-position: right;
+    background-color: rgb(0, 0, 0); 
+    overflow-x: hidden; 
+    opacity: 0.9;
+    display: none; /* Hidden */
+}
+
+.bar2{
+    height: 100%; 
+    width: 130px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-position: left;
+    background-color: rgb(0, 0, 0); 
+    overflow-x: hidden; 
+    opacity: 0.9;
+    display: none; /* Hidden */
+}
+
+/* Styles all sidebar content for screens with width < 1100px */
+@media screen and (max-width:1100px) {
+    .bar1 {display: none;}
+    .bar2 {display:none;}
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .openbtn {font-size: 15px; padding: 5px 5px; margin-top: -15px; margin-left: 0px;}
+    .sidebar a:hover {font-size: 25px;}
+    .openbtn:hover {font-size: 18px;}
+}
+
+/* Styles all sidebar content for screens with height < 510px */
+@media  screen and (max-height:510px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .sidebar a:hover {font-size: 20px;}
+    .openbtn {font-size: 18px; padding: 5px 5px; margin-top: -15px;margin-left: 0px;}
+    .bar1 {display: none;}
+    .bar2 {display: none;}
+}
+
+/* Styles all sidebar content for screens with width > 1300px */
+@media screen and (min-width: 1300px){
+    .sidebar a {font-size: 30px;}
+    .sidebar a:hover {font-size: 40px;}
+    .openbtn {left: 18px;}
+}
+
+
+
+/* All styling is related to the black bar at the top*/
+
+/* Sizing, positioning and coloration of the top bar */
+ul { 
+    z-index: 1;  
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    animation: fadeIn 0.5s;
+}
+  
+/* Header link styling */
+li header{ 
+    float: right;
+    text-decoration: none;    
+}
+  
+/* Header positioning, appearance and sizing */
+header{ 
+    animation: fadeIn 2s; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 90px;
+    position: absolute;
+    top:-10px;
+    right: 33%;
+    color: aliceblue;
+    padding: 5px 10px 10px 10px;
+    transition: 0.5s;
+}
+header:hover{
+    color: burlywood;
+}
+
+/* Preview button positioning, appearance and sizing */
+#preview{
+    animation: fadeIn 2s;
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none;
+    float: left;
+    margin-top: 40px;
+    margin-right: 10px;
+    font-size: 25px;
+    position: sticky;
+    transition: 0.5s;
+}
+#preview:hover{
+    transition: 0.2s;
+    color: burlywood;
+    font-size: 30px;
+}
+
+/* Menu button positioning, appearance and sizing */
+#menu_button{
+    animation: fadeIn 2s;
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none;
+    float: left;
+    margin-top: 40px;
+    margin-left: 120px;
+    font-size: 25px;
+    position: sticky;
+    transition: 0.5s;
+}
+#menu_button:hover{
+    transition: 0.2s;
+    color: burlywood;
+    font-size: 30px;
+}
+
+/* About & contact positioning, appearance and sizing */
+#about_contact{
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin-top: 40px;
+    font-size: 25px;
+    right:125px;
+    position:sticky;
+    animation: fadeIn 2s;
+    transition: 0.5s;
+}
+#about_contact:hover{
+    transition: 0.2;
+    color: burlywood;
+    font-size: 30px;
+}
+
+/* Styling all content for screens with width < 1100px */
+@media screen and (max-width: 1100px) {
+    #about_contact {margin-top: 10px; left: 600px; font-size: 14px; float: right;}
+    #about_contact:hover {font-size: 15px;}
+    #menu_button {margin-top: 10px; margin-left:50px;font-size: 14px;}
+    #menu_button:hover {font-size: 16px;}
+    header{font-size: 45px; text-align: right; padding: 5px 5px; margin-right: -50px;}
+    ul {height: 50px;}   
+    #preview {margin-top: 10px; margin-left: 0px; font-size: 14px;}
+    #preview:hover {font-size: 16px;}
+}
+
+/* Styling all content for screens with height < 510px */
+@media screen and (max-height: 510px) {
+    ul {height: 50px;}
+    #about_contact {margin-top: 10px; font-size: 14px;}
+    #about_contact:hover{font-size: 18px;}
+    #menu_button {margin-top: 10px; font-size: 14px;}
+    #menu_button:hover {font-size: 18px;}
+    header {font-size: 50px; margin-top: 0;}
+    #preview {margin-top: 10px; font-size: 14px;}
+    #preview:hover {font-size: 18px;}
+}
+
+/* Styling all content for screens with width > 1300px */
+@media screen and (min-width: 1300px){
+    header {left:38%;}
+    #about_contact {right: 200px;}
+}
+
+
+
+/* Styling all content for screens with width < 1100px */
+@media screen and (max-width:1100px) {
+    td {font-size: 12px;}
+    h2 {font-size: 14px;}
+    p {font-size: 12px;}
+    .opening_hours {width: fit-content; max-width: 20%; margin-left: 65px;}
+    #About_us {height: 30%;}
+    .Contact_us {width: 30%; height: 30%; margin-left: -100px; margin-top: -70px;}
+    figcaption {font-size: 12px;}
+}
+
+/* Styling all content for screens with height < 510px */
+@media screen and (max-height:510px) {
+    td {font-size: 12px;}
+    h2 {font-size: 14px;}
+    p {font-size: 12px;}
+    .opening_hours {width: fit-content; margin-top: -107px; height: 40%;}
+    #About_us {height: 50%; margin-top: 10px; margin-left: 650px;}
+    .Contact_us {width: 20%; height: 60%; margin-left: 0px;margin-top: 0px;}
+    figcaption {font-size: 12px;}
+    .gus {width: 200px; height: 150px; margin-top: -30px;}
+}
+
+
+
+
+
+
+#background{ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(5, 6, 5, 0.5)), 
+    url("https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg");
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: fixed;   
+    width: 100%;
+    right: 0;
+    flex: content;
+    animation: 2s fadeIn;
+}
+
+#form{
+    position: relative;
+    margin: 5px 5px 5px 5px;
+}
+
+h2.texts{
+    width: 10%;
+}
+article.texts{
+    margin: -150px 0px 0px 300px
+}
+/* Bubble containing contact information */
+.texts{
+    margin-top: 70px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    border-radius: 10px/10px;
+    background-color: aliceblue;
+    width: 60%;
+    margin-left: 12px;
+    transition: 2s;
+}
+.texts:hover{
+    background-color: burlywood;
+    border-radius: 40px/30px;
+}
+
+
