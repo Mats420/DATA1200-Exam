@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/topic.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Homepage</a>
+        <a href="../restaurant/restaurant.html">Restaurant</a>
+        <a href="../booking/booking.html">Booking</a>
+        <a href="../accessibility/accessibility.html">Accessibility</a>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;<span></span></button>
+    </div>
+    <div id="text">
+        <h1>Big Data & AI</h1>
+        <br>
+        <h2>Question 1:</h2><h3>Consider the roles algorithms play in your daily life, at home, and at work. Confront your reflections.</h3>
+        <p>
+            Algorithms are everywhere in our daily lives. 
+            Whether browsing the homepage on youtube or tiktok, algorithms are ultimately what feed us the content that’s there. 
+            One factor of the algorithm is user preference.
+            If we for instance watch a video of someone reviewing a Star Wars movie on youtube, 
+            chances are that the next video queued is a video that spoils the ending of the exact same movie. 
+        </p>
+        <p>
+            At school, using a digital calculator on the pc is an interaction with algorithms.
+            At home when browsing through amazon for books and wanting to find a good price, 
+            sorting algorithms are used to filter between low and high prices. At work when wanting to find a person’s contact information in the organizations database, 
+            an algorithm searches through the system and provides the result of that person’s name, or that of similarly named persons. 
+        </p>
+        <p>
+            We are very much dependent on algorithms in today’s society. Whether at work or at school,
+            algorithms are found on every digital device doing jobs much quicker and efficient than any human could. 
+            Being an IT-student also gives great insight into the creation of algorithms. With only a couple lines of code, an algorithm is created that is designed to do a job. 
+        </p>
+        <br><hr>
+        <h2>Question 2:</h2><h3>Consider the ethical dilemmas of AI.</h3>
+        <p>
+            On one hand, artificial Intelligence has started taking importance a few years ago. 
+            We agreed with the video explaining that machines should be created from scratch. 
+            Each company has to create their AI to understand and refactor them to changes in ethics.
+            We have discussed the unevitable replacement of humans in certain instances. But even then, machines won't be doing everything on their own; 
+            they could only make decision that humans have inserted into their intelligence. Furthermore, a person would be able to check this decision. 
+            Robots should be ruled, and experiments should be done in safe places. Placing machines in real environments, in order to give them experiences that provide them with common sense through developmental learning, 
+            is a dangerous experiment.
+        </p>
+        <p>
+            On the other hand, we can use AI to monitorize various issues such as health problems, this is where the artificial intelligence shines. 
+            We are connected, and technology is changing every day. Nowadays we have gadgets such as smartwatches that can measure our constants all the time.
+        </p>
+        <p>
+            In conclusion: AI is created to help, we are unique. Ethics in this case are pretty difficult to comprehend, each person has their  own thoughts, whereas machines need orders. 
+            They are not able to choose between whether to kill 5 people or kill a single person, they are coded, and they do what is programmed. Consequences come later, and humans will have to deal with them.
+        </p>
+    </div>
+
+
+    <script>
+        /* Using JavaScript to give the sidebar function. 
+        On opening of sidebar a window slides in from the left which dispays the sidebar content 
+        width and marginRight on 250px */
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "385px";
+            document.getElementById("main").style.marginRight = "385px";
+        }
+        /* On closing of sidebar, content collapses with width and marginright on 0px */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginRight = "0";
+        }
+    </script>
+</body>
+</html>
