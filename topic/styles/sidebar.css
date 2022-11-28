@@ -3,7 +3,7 @@
     height: 100%; 
     width: 0; /* changes with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 3; 
+    z-index: 2; 
     top: 0;
     left: 0;
     background-color: rgb(0, 0, 0); 
@@ -47,10 +47,10 @@
     padding: 5px 5px;
     border: none;
     animation: 4s fadeIn;
-    z-index: 2;
+    z-index: 1;
     margin-top: 10px;
     position: fixed;
-    margin-left: 0px;
+    margin-left:5px;
     border-radius: 50px/40px;
     transition: 0.5s;
 }
@@ -65,36 +65,7 @@
     padding: 20px;
 }
 
-/*
-Sidebars .bar1 and .bar2 helped with aligning the navigation arrows
-Will not be visible. */
-.bar1{
-    height: 100%;
-    width: 130px; 
-    position: fixed;
-    z-index: 1; 
-    top: 0;
-    right: 0;
-    background-position: right;
-    background-color: rgb(0, 0, 0); 
-    overflow-x: hidden; 
-    opacity: 0.9;
-    display: none; /* Hidden */
-}
 
-.bar2{
-    height: 100%; 
-    width: 130px; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0;
-    left: 0;
-    background-position: left;
-    background-color: rgb(0, 0, 0); 
-    overflow-x: hidden; 
-    opacity: 0.9;
-    display: none; /* Hidden */
-}
 
 /* Styles all sidebar content for screens with width < 1100px */
 @media screen and (max-width:1100px) {
