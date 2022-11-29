@@ -3,213 +3,246 @@
 
 /* The sidebar menu */
 .sidebar {
-    height: 100%; 
-    width: 0; /* changes with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 3; 
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0); 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    opacity: 1;
-  }
-  
-  /* The sidebar links */
-  .sidebar a { 
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #747171;
-    display: block;
-    transition: 0.3s; /* Transition to hover effect */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
-    color: aliceblue;
-    font-size: 30px;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
-    position:relative;
-    top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-right: 50px;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    color: aliceblue;
-    background-color: black;
-    padding: 5px 5px;
-    border: none;
-    animation: 4s fadeIn;
-    z-index: 2;
-    margin-top: 10px;
-    position: fixed;
-    margin-left: 23px;
-    border-radius: 50px/40px;
-    transition: 0.5s;
+  height: 100%; 
+  width: 0; /* changes with JavaScript */
+  position: fixed; 
+  z-index: 3; 
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0); 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+  opacity: 1;
+}
+
+/* The sidebar links */
+.sidebar a { 
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #747171;
+  display: block;
+  transition: 0.3s; 
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position:relative;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: black;
+  padding: 5px 5px;
+  border: none;
+  z-index: 2;
+  margin-top: 0px;
+  position: fixed;
+  margin-left: 23px;
+  border-radius: 50px/40px;
+  transition: 0.5s;
 }
 
 /* Hover effect on hover of button */
 .openbtn:hover{
-    color: burlywood;
+  color: burlywood;
 }
 /* For opnening the sidebar */
 #main {
-    transition: margin-right .5s; /* Transition effect */
-    padding: 20px;
+  transition: margin-right .5s;
+  padding: 20px;
+}
+
+/* Sizing, positioning and coloration of the top bar */
+ul { 
+  z-index: 1;  
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+/* Header link styling */
+li header{ 
+  float: right;
+  text-decoration: none;    
+}
+
+/* Header positioning, appearance and sizing */
+header{ 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 90px;
+  position: absolute;
+  top:-10px;
+  right: 33%;
+  color: aliceblue;
+  padding: 5px 10px 10px 10px;
+  transition: 0.5s;
+}
+header:hover{
+  color: burlywood;
+}
+
+/* About_contact link */
+#about_contact{
+  float: right;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  margin-top: 40px;
+  font-size: 25px;
+  right:125px;
+  position:sticky;
+  animation: fadeIn 2s;
+  transition: 0.5s;
+}
+#about_contact:hover{
+  transition: 0.2;
+  color: burlywood;
+  font-size: 30px;
+}
+
+#background{ 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(5, 6, 5, 0.5)), 
+  url("https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg");
+  height: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: fixed;   
+  width: 100%;
+  right: 0;
+  flex: content;
+}
+
+#form_container{
+  margin-top: -60px;
+  padding: 5px 5px 5px 5px;
+}
+#form{
+  position: relative;
+  margin: 5px 5px 5px 5px;
+ 
+}
+
+h2.texts{
+  width: 15%;
+}
+article.texts{
+  margin: -230px 0px 0px 250px
+}
+/* Bubble containing contact information */
+.texts{
+  margin-top: 70px;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  border-radius: 10px/10px;
+  background-color: aliceblue;
+  width: 60%;
+  margin-left: 12px;
+  transition: 2s;
+}
+.texts:hover{
+  background-color: burlywood;
+  border-radius: 40px/30px;
+}
+#map{
+  position: relative;
+  z-index: 3;
+  margin-top: 10px;
+  margin-left: 250px;
 }
 
 
 /* Styles all sidebar content for screens with width < 1100px */
 @media screen and (max-width:1100px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-    .openbtn {font-size: 15px; padding: 5px 5px; margin-top: -15px; margin-left: 0px;}
-    .sidebar a:hover {font-size: 25px;}
-    .openbtn:hover {font-size: 18px;}
-    header{font-size: 45px; text-align: right; padding: 5px 5px; margin-right: -50px;}
-    ul {height: 50px;}   
-    td {font-size: 12px;}
-    h2 {font-size: 14px;}
-    p {font-size: 12px;}
-    figcaption {font-size: 12px;}
-    #about_contact {margin-top: 10px; left: 600px; font-size: 14px; float: right;}
-    #about_contact:hover {font-size: 15px;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .openbtn {font-size: 15px; padding: 5px 5px; margin-top: -15px; margin-left: 0px;}
+  .sidebar a:hover {font-size: 25px;}
+  .openbtn:hover {font-size: 18px;}
+  li header{font-size: 45px; text-align: right; padding: 5px 5px; margin-right: -50px;}
+  ul {height: 50px;}   
+  h2 {font-size: 14px;}
+  p {font-size: 12px;}
+  li #about_contact {margin-top: 10px; left: 600px; font-size: 14px; float: right;}
+  li #about_contact:hover {font-size: 15px;}
+  #map_img {width: 200px; height: 200px;}
+  #map {margin-left: 150px;}
+  #form {width: 100px;} 
+  #background {overflow: scroll;}
+  article.texts {margin-left: 130px;}
 }
 
 /* Styles all sidebar content for screens with height < 510px */
 @media  screen and (max-height:510px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-    .sidebar a:hover {font-size: 20px;}
-    .openbtn {font-size: 18px; padding: 5px 5px; margin-top: -15px;margin-left: 0px;}
-    ul {height: 50px;}
-    header {font-size: 50px; margin-top: 0;}
-    #about_contact {margin-top: 10px; font-size: 14px;}
-    #about_contact:hover{font-size: 18px;}
-    td {font-size: 12px;}
-    h2 {font-size: 14px;}
-    p {font-size: 12px;}
-    figcaption {font-size: 12px;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .sidebar a:hover {font-size: 20px;}
+  .openbtn {font-size: 18px; padding: 5px 5px; margin-top: -15px;margin-left: 0px;}
+  ul {height: 50px;}
+  header {font-size: 50px; margin-top: 0;}
+  #about_contact {margin-top: 10px; font-size: 14px;}
+  #about_contact:hover{font-size: 18px;}
+  td {font-size: 12px;}
+  h2 {font-size: 14px;}
+  p {font-size: 12px;}
+  figcaption {font-size: 12px;}
+  #background {overflow: scroll;}
+  #map_img {width: 300px; height: 150px;}
 }
 
 /* Styles all sidebar content for screens with width > 1300px */
 @media screen and (min-width: 1300px){
-    .sidebar a {font-size: 30px;}
-    .sidebar a:hover {font-size: 40px;}
-    .openbtn {left: 18px;}
-    header {left:38%;}
-    #about_contact {right: 200px;}
+  .sidebar a {font-size: 30px;}
+  .sidebar a:hover {font-size: 40px;}
+  .openbtn {left: 18px;}
+  header {left:38%;}
+  #about_contact {right: 200px;}
 }
 
 
 
-/* All styling is related to the black bar at the top*/
 
-/* Sizing, positioning and coloration of the top bar */
-ul { 
-    z-index: 1;  
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    animation: fadeIn 0.5s;
-}
-  
-/* Header link styling */
-li header{ 
-    float: right;
-    text-decoration: none;    
-}
-  
-/* Header positioning, appearance and sizing */
-header{ 
-    animation: fadeIn 2s; 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 90px;
-    position: absolute;
-    top:-10px;
-    right: 33%;
-    color: aliceblue;
-    padding: 5px 10px 10px 10px;
-    transition: 0.5s;
-}
-header:hover{
-    color: burlywood;
-}
 
-#about_contact{
-    float: right;
-    text-decoration: none;
-    color: white;
-    padding: 10px 10px 10px 10px;
-    margin-top: 40px;
-    font-size: 25px;
-    right:125px;
-    position:sticky;
-    animation: fadeIn 2s;
-    transition: 0.5s;
-}
-#about_contact:hover{
-    transition: 0.2;
-    color: burlywood;
-    font-size: 30px;
-}
 
-#background{ 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(5, 6, 5, 0.5)), 
-    url("https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg");
-    height: 100%;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: fixed;   
-    width: 100%;
-    right: 0;
-    flex: content;
-    animation: 2s fadeIn;
-}
 
-#form{
-    position: relative;
-    margin: 5px 5px 5px 5px;
-}
 
-h2.texts{
-    width: 10%;
-}
-article.texts{
-    margin: -150px 0px 0px 300px
-}
-/* Bubble containing contact information */
-.texts{
-    margin-top: 70px;
-    padding: 5px 5px 5px 5px;
-    position: relative;
-    border-radius: 10px/10px;
-    background-color: aliceblue;
-    width: 60%;
-    margin-left: 12px;
-    transition: 2s;
-}
-.texts:hover{
-    background-color: burlywood;
-    border-radius: 40px/30px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
