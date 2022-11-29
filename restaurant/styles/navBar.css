@@ -1,6 +1,8 @@
-
-/* All styling is related to the black bar at the top*/
-
+/* Makes the fadeIn effect smooth */
+@keyframes fadeIn { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 /* Sizing, positioning and coloration of the top bar */
 ul { 
     z-index: 1;  
