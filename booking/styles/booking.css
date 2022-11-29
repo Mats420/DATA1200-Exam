@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 
 /* Makes the fadeIn effect smooth */
 @keyframes fadeIn { 
