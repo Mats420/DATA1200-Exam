@@ -1,17 +1,10 @@
 
-/* FadeIn effect where on refresh, content = 0 opacity and 
-after transition animation content = 1 opacity */
-@keyframes fadeIn { 
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
 
 /* Styling of the entire body */
 body{
     overflow-y: hidden; /* No scrolling vertically  */
     overflow-x: hidden ; /* No scrolling horizontally */
-    background-color: rgb(0, 0, 0); /* Black background such that the fadeIn isn't too bright */
-    animation: fadeIn 3s; /* Transition time for fadeIn */
+    background-color: rgb(0, 0, 0); 
 }
 
 /* Styling for the html */
