@@ -1,5 +1,9 @@
 
-
+/* Makes the fadeIn effect smooth */
+@keyframes fadeIn { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 /* The sidebar menu */
 .sidebar {
