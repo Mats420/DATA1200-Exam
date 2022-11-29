@@ -350,6 +350,7 @@ which is responsible for creating the visuals of the arrows
     #logo {height: 60%; width: 60%;}
     #Menu {margin-left: 65px; width: 350px;}  
     #preview_menu {width: 450px; margin-left: -90px;} 
+    #copyright {font-size: 14px; margin-left:40px;} 
 }
 
 /* Styling all content for screens with width > 1300px */
