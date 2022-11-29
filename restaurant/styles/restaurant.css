@@ -61,17 +61,17 @@ figure{
     width: 50%;
     height: 50%;
     position: relative;
-    margin-left: 26%;
+    margin-left: 320px;
     top: 150px;
 }
 
 /* The two chikens */
-#pollos{
+#logo{
     transition: 1s; /* transition time for the hover effects */
 } 
 
 /* Hover effect on the image */
-#pollos:hover{
+#logo:hover{
     transition: 1s;
     transform: rotate(360deg); 
 }
@@ -290,9 +290,14 @@ which is responsible for creating the visuals of the arrows
 #slogan{
     position: absolute;
     text-align: center;
-    background-color: burlywood;
-    border-radius: 20px/20px; /* Circular edge */
+    background-color: white;
+    border-radius: 10px/10px; /* Circular edge */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.5s;
+}
+#slogan:hover{
+    border-radius: 20px/20px;
+    background-color: burlywood;
 }
 
 /* Styling all content for screens with height < 510px */
@@ -312,7 +317,7 @@ which is responsible for creating the visuals of the arrows
     dt {font-size: 14px;}
     h2 {font-size:20px}
     #background3 {top: 1250px; height: fit-content;}
-    #pollos {height: 250px; width: 200px;}
+    #logo {height: 250px; width: 200px;}
     #background2 {top: 600px; height: fit-content;}
     #background1{height: 600px;}
 }
@@ -333,7 +338,7 @@ which is responsible for creating the visuals of the arrows
     dd {font-size: 12px;}
     dt {font-size: 14px;}
     h2 {font-size:20px}
-    #pollos {height: 250px; width: 200px;}
+    #logo {height: 250px; width: 200px;}
     #Menu {margin-left: 65px; width: 350px;}  
     #preview_menu {width: 450px; margin-left: -90px;} 
 }
@@ -347,7 +352,7 @@ which is responsible for creating the visuals of the arrows
     .down_arrow2 {top: 130px;}
     .up_arrow2 {top: 30px; left: 95px;}
     .top_link {top: 190px;}
-    #pollos {width: 350px;height: 400px;}
+    #logo {width: 350px;height: 400px;}
     figcaption {font-size: 20px;}
     cite {font-size: 15px;}
     dd {font-size: 20px;}
