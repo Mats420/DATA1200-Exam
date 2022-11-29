@@ -288,6 +288,8 @@ which is responsible for creating the visuals of the arrows
 
 /* Styling of figcaption on page1 */
 #slogan{
+    padding: 10px 10px 10px 10px;
+    margin-top: 30px;
     position: absolute;
     text-align: center;
     background-color: white;
@@ -298,6 +300,13 @@ which is responsible for creating the visuals of the arrows
 #slogan:hover{
     border-radius: 20px/20px;
     background-color: burlywood;
+}
+
+#copyright{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -20px;
+    margin-left: 740px;
 }
 
 /* Styling all content for screens with height < 510px */
@@ -317,7 +326,7 @@ which is responsible for creating the visuals of the arrows
     dt {font-size: 14px;}
     h2 {font-size:20px}
     #background3 {top: 1250px; height: fit-content;}
-    #logo {height: 250px; width: 200px;}
+    #logo {height: 50%; width: 30%;}
     #background2 {top: 600px; height: fit-content;}
     #background1{height: 600px;}
 }
@@ -338,7 +347,7 @@ which is responsible for creating the visuals of the arrows
     dd {font-size: 12px;}
     dt {font-size: 14px;}
     h2 {font-size:20px}
-    #logo {height: 250px; width: 200px;}
+    #logo {height: 60%; width: 60%;}
     #Menu {margin-left: 65px; width: 350px;}  
     #preview_menu {width: 450px; margin-left: -90px;} 
 }
