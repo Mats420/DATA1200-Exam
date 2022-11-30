@@ -89,6 +89,7 @@ footer a {
     color: rgb(0, 0, 0);
     padding: 10px;
     text-decoration: underline;
+    padding: 5px 5px 5px 5px;
 }
 #ref_images {
     padding: 10px;
