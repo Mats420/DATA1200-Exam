@@ -74,8 +74,8 @@ figure{
 
 /* Hover effect on the image */
 #logo:hover{
-    transition: 1s;
-    transform: rotate(360deg); 
+    transition: 2s;
+    transform: rotate(720deg); 
 }
 
 /* Styling of the sidebar button */
@@ -87,12 +87,12 @@ figure{
 positioning on bottom center of page1 */
 .down_arrow1{
     margin-left: 0;
-    margin-top: 18.7%;
+    margin-top: 18%;
     background-color: black;
     text-align: center;
     padding: 0px 10px 10px 10px;
     position: relative;
-    height: 50px;
+    height: 60px;
     transition: 1s;
     z-index: 2;
 }
