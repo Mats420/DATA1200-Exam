@@ -1,26 +1,27 @@
 
 /* positioning, appearance and sizing of image and figcaption */
-.gus{
+.dude{
     display: flex;
     flex-flow: column;
     padding: 5px;
     max-width: 400px;
-    margin: auto;
     text-align: center;
-    margin-left: 27%;
-    color: rgb(14, 13, 13);
-    font: italic smaller sans-serif;
-    padding: 3px;
+    margin-left: 0;
+    font: italic smaller sans-serif;  
 }
 
 /* Effects of image */
-#gus_img{
+#dude_img{
     border-radius: 10px;
+    margin-left: 150px;
+    margin-top: -30px;
+    width: 100px;
+    height: 200px;
     transition: 0.5s;
-    border-radius: 50%;
+    
 }
-#gus_img:hover{
-    border-radius: 20px/20px;
+#dude_img:hover{
+    transform: rotate(360deg);
 }
 
 
@@ -52,10 +53,11 @@ body{
 
 /* Bubble containing image and figcaption */
 #About_us{
+    position: relative;
     margin-top: 60px;
     background-color: aliceblue;
     height: 43%;
-    width: 35%;
+    width: 30%;
     padding: 5px 5px 5px 5px;
     border-radius: 10px/10px;
     margin-left: 130px;
@@ -89,12 +91,12 @@ body{
 
 /* Bubble containing contact information */
 .Contact_us{
-    margin-top: -10px;
+    margin-top: -75px;
     padding: 5px 5px 5px 5px;
     position: relative;
     bottom:130px;
     border-radius: 10px/10px;
-    height: 20%;
+    height: 25%;
     background-color: aliceblue;
     width: 60%;
     right: -360px;
@@ -104,6 +106,20 @@ body{
     background-color: burlywood;
     border-radius: 40px/30px;
 }
+footer{
+    height: 15px;
+    padding: 0px 5px 5px 5px;
+    margin-top: -90px;
+    background-color: azure;
+    float: left;
+    border-radius: 20px/20px;
+
+}
+footer p{
+    font-style: italic;
+    margin-top: 0;
+    height: 20px;
+}
 
 /* Styling all content for screens with width < 1100px */
 @media screen and (max-width:1100px) {
@@ -111,9 +127,11 @@ body{
     h2 {font-size: 14px;}
     p {font-size: 12px;}
     .opening_hours {width: fit-content; max-width: 20%; margin-left: 65px;}
-    #About_us {height: 30%;}
+    #About_us {height: 25%;}
     .Contact_us {width: 30%; height: 30%; margin-left: -100px; margin-top: -70px;}
-    figcaption {font-size: 12px;}
+    figcaption {display: none;}
+    .dude{ margin-left: -90px; margin-top: 30px;}
+    #dude_img {width: 50px;height: 100px;}
 }
 
 /* Styling all content for screens with height < 510px */
@@ -121,11 +139,12 @@ body{
     td {font-size: 12px;}
     h2 {font-size: 14px;}
     p {font-size: 12px;}
-    .opening_hours {width: fit-content; margin-top: -107px; height: 40%;}
-    #About_us {height: 50%; margin-top: 10px; margin-left: 650px;}
+    .opening_hours {width: min-content; margin-top: -60px; height: min-content;}
+    #About_us {height: 50%; margin-top: 10px; margin-left: 120px;}
     .Contact_us {width: 20%; height: 60%; margin-left: 0px;margin-top: 0px;}
-    figcaption {font-size: 12px;}
-    .gus {width: 200px; height: 150px; margin-top: -30px;}
+    figcaption {display: none;}
+    #dude_img{width: 50px;height: 100px;}
+    .dude { margin-left: -20px; margin-top: 30px;}
 }
 
 
