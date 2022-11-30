@@ -67,6 +67,8 @@ figure{
 
 /* The two chikens */
 #logo{
+    width: 40%;
+    height: 80%;
     transition: 1s; /* transition time for the hover effects */
 } 
 
@@ -347,6 +349,7 @@ which is responsible for creating the visuals of the arrows
     dd {font-size: 12px;}
     dt {font-size: 14px;}
     h2 {font-size:20px}
+    .logo_placement{margin-left: 100px;}
     #logo {height: 60%; width: 60%;}
     #Menu {margin-left: 65px; width: 350px;}  
     #preview_menu {width: 450px; margin-left: -90px;} 
@@ -355,7 +358,7 @@ which is responsible for creating the visuals of the arrows
 
 /* Styling all content for screens with width > 1300px */
 @media screen and (min-width: 1300px){
-    .hermanos {margin: auto;margin-top: 5%;}
+    .logo_placement {margin: auto;margin-top: 5%;}
     .down_arrow1 {top: -30px;}
     #preview_menu {height: 66%;}
     .up_arrow1 {top: 170px;}
