@@ -49,8 +49,7 @@ cite{
 
 /* Styling of all figures */
 figure{
-    text-align: center; /* All figures stay center */
-    padding: auto;   
+    text-align: center; /* All figures stay center */  
     margin-top: auto;
     position: relative; /* Positioning relative for easy movement */
 }
