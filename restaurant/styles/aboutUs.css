@@ -148,5 +148,11 @@ footer p{
     .dude { margin-left: -20px; margin-top: 30px;}
 }
 
+@media screen and (min-width:1300px) {
+    .opening_hours {width: min-content;}
+    .Contact_us {margin-top: -150px; height: min-content;}
+    #About_us {height: min-content;}
+    footer  {margin-top: 250px;}
+}
 
 
