@@ -358,13 +358,13 @@ which is responsible for creating the visuals of the arrows
 /* Styling all content for screens with width > 1300px */
 @media screen and (min-width: 1300px){
     .logo_placement {margin: auto;margin-top: 5%;}
-    .down_arrow1 {top: -30px;}
+    .down_arrow1 {margin-bottom: 0px;}
     #preview_menu {height: 66%;}
-    .up_arrow1 {top: 170px;}
-    .down_arrow2 {top: 130px;}
-    .up_arrow2 {top: 30px; left: 95px;}
-    .top_link {top: 190px;}
-    #logo {width: 350px;height: 400px;}
+    .up_arrow1 {margin-top: 450px; margin-right: 100px;}
+    .down_arrow2 {margin-top: 2000px; margin-left: 50px;}
+    .up_arrow2 {margin-top: 900px; margin-right: -100px;}
+    .top_link {margin-top: 1250px;}
+    #logo {width: 400px;height: 400px;}
     figcaption {font-size: 20px;}
     cite {font-size: 15px;}
     dd {font-size: 20px;}
