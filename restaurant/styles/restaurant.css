@@ -318,7 +318,7 @@ which is responsible for creating the visuals of the arrows
     .up_arrow1 {display: none;}
     .down_arrow2 {display: none;}
     .up_arrow2 {display: none;}
-    .top_link {top: 1650px; margin-left: -30px;} /* Only arrow not invisible */
+    .top_link {top: 1700px; margin-left: -30px;} /* Only arrow not invisible */
     .arrow {padding: 0 10px 10px 0;} 
     .arrow:hover {margin-bottom: 0;}
     figcaption {font-size: 14px;}
