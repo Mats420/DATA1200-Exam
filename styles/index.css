@@ -257,6 +257,8 @@ padding: 20px;
   .container:hover .overlay{height: 30px; bottom: -10px;}
   header {font-size: 60px;}
   li a {font-size: 45px;}
+  #background_left{overflow: scroll;}
+  #rating_figure{bottom: 55px;}
 }
 
 /* Styling all content for screens with width < 950px */
