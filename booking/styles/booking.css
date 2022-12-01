@@ -129,7 +129,7 @@ header:hover{
   transition: 0.5s;
 }
 #about_contact:hover{
-  transition: 0.2;
+  transition: 0.2s;
   color: burlywood;
   font-size: 30px;
 }
