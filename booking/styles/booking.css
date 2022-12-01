@@ -234,6 +234,7 @@ article.texts{
   .openbtn {left: 18px;}
   header {left:38%;}
   #about_contact {right: 200px;}
+  h2.texts {width: max-content;}
 }
 
 
