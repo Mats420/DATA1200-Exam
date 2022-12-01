@@ -274,12 +274,12 @@ padding: 20px;
 
 /* Styling all content for screens with width > 1300px */
 @media screen and (min-width:1300px) {
- header {left: 100px; }
+ header {margin-right: 200px; }
  #rating_img {height:150px; width: 150px;}
  #rating_text {font-size: 20px;}
- #left_text {margin-top: 105px;}
+ #left_text {margin-top: 0px;}
  .container:hover .overlay {height: 50px; bottom: -15px;}
- .overlay a {padding: 5px 5px 5px;}
+ .overlay a {padding: 5px 5px 5px 5px;}
  .openbtn {font-size: 30px; left: 0;}
  .sidebar a {font-size: 30px;}
  .sidebar a:hover {font-size: 40px;}
