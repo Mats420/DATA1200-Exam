@@ -6,8 +6,10 @@
     <title>Accessibility</title>
 </head>
 <body>
-	<h1>Accessibility</h1>
+    <h1>Accessibility</h1>
     <h2>Tests used: <a href="https://wave.webaim.org/" target="_blank">WAVE</a> and <a target="_blank" href="https://validator.w3.org/">W3</a></h2>
+    <li><a href="#Text">Coding choices</a></li>
+    <hr>
     <figure>
         <figcaption><h3>Version 1 of the homepage:</h3></figcaption>
         <img src="version 1.png" height="500px" width="900px">    
@@ -18,6 +20,18 @@
         <img src="version 2.png" height="500px" width="900px">
     </figure>
     <br>
+    <hr>
+    <figure>
+        <figcaption><h3>Version 1 of the restaurant page:</h3></figcaption>
+        <img src="restaurant version 1.png" height="600px" width="1100px">
+    </figure>
+    <br>
+    <figure>
+        <figcaption><h3>Final version of the restaurant:</h3></figcaption>
+        <img src="restaurant version 2.png" height="600px" width="1100px">
+    </figure>
+    <br>
+    <hr>
     <figure>
         <figcaption><h3>Finding issues with the HTML on the final version of the homepage:</h3></figcaption>
         <img src="index w3.png" height="600px" width="600px">
@@ -25,7 +39,7 @@
     <br>
     <figure>
         <figcaption><h3>Finding issues with coding on the booking page:</h3></figcaption>
-        <img src="booking w3.png" height="600px" width="1200px"> 
+        <img src="images/booking w3.png" height="600px" width="1200px"> 
     </figure>
     <br>
     <figure>
@@ -38,8 +52,55 @@
         <img src="topic WAVE.png" height="600px" width="1100px">
     </figure>
     <br>
-
-
+    <hr>
+    <br>
+    <hr>
+    <h2 id="Text">Coding choices</h2>
+    <h3>Homepage:</h3>
+    <p style="width: 700px;">
+        The homepage directs the user to the other content of the website.
+        This was done with a sidebar, some catchphrases that are clickable, 
+        and a welcoming background image that is used on the other subpages as well.
+    </p>
+    <p style="width:700px;">
+        The sidebar used would be reused on the other subpages as well, but with different width when open and different links inside.
+        This goes for the navBar too, where the Mountlake logo and navbar height is reused on all pages except for the topic page and accessibility one. 
+        Upon minimizing the page, all relevant info is still available to the user.
+    </p>
+    <h3>Restaurant and About us:</h3>
+    <p style="width:700px;">
+        Instead of having a scrolling function on fullscreen, we decided to have arrows navigating between pages.
+        If the screen is minimized however, the scrolling would be available. Moreover, all relevant info is still available to the user. On the navbar,
+        there are options to navigate to the pages by clicking "menu", "preview" or "about & contact".
+    </p>   
+    <p style="width:700px;">   
+        On the second page under "preview menu" we used flip-boxes such that on hover, the meals would rotate in a manner where the flipside desscribes the meal. 
+        The last page contains the same info as the flip-boxes which is the "menu."
+        About us & contact contains contact info and opening times, this is all still visible when minimizing the page. 
+        No major issues were found via WAVE or W3, only warnings about headings and links being empty.
+    </p>
+    <h3>Booking:</h3>
+    <p style="width:700px;">
+        The booking page is similar to the about us page in the sense that all text is gathered in their "bubbles".
+        This page contains a google map which is implemented via an iframe tag which is supported and provided by google maps. 
+    </p>
+    <p style="width:700px;">
+        On the page, a form is able to be filled with info that a restaurant would find relevant.
+        On the automated test in W3, there is a complaint about the id "form" being used too many times.
+        We decided against resolving this, since the form should only appear real and not function as such, 
+        and the tag helped styling the content in an appropriate manner.
+    </p>
+    <p style="width:700px;">
+        Upon minimizing the page, all relevant info is still dispayed.
+    </p>
+    <h3>Topic:</h3>
+    <p style="width:700px;">
+        For the topics page we copied and pasted one of our submissions in DATA1100. 
+        Here we decided to add two seperate slideshows, that the user can interact with whilst reading the text.
+        Certain words are linked to sources and upon hovering over them, a short description should be available. 
+        On the footer, all images and sources used are listed and linked.
+        No major issues found via WAVE or W3.
+    </p>
    
 </body>
 </html>
