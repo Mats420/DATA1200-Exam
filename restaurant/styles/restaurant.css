@@ -370,6 +370,15 @@ which is responsible for creating the visuals of the arrows
     dd {font-size: 20px;}
     dt {font-size: 25px;}
     h2{font-size: 35px;}
+    body {overflow-y: scroll;}
+}
+
+@media screen and (min-height: 800px){
+    body {overflow-y: scroll;} 
+    .down_arrow1 { display: none;}
+    .up_arrow1 {display: none;}
+    .down_arrow2 {display: none;}
+    .up_arrow2 {display: none;}
 }
 
   
