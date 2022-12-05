@@ -375,10 +375,10 @@ which is responsible for creating the visuals of the arrows
 
 @media screen and (min-height: 800px){
     body {overflow-y: scroll;} 
-    .down_arrow1 { display: none;}
-    .up_arrow1 {display: none;}
-    .down_arrow2 {display: none;}
-    .up_arrow2 {display: none;}
+    .up_arrow1 {margin-top: -500px;}
+    .down_arrow2 {margin-top: 0; margin-right: 100px;}
+    .up_arrow2 {margin-top: -1500px; margin-right: 100px;}
+    .top_link {margin-top: 1200px;}
 }
 
   
